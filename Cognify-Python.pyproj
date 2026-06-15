@@ -22,6 +22,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Cognify_Python.py" />
+    <Compile Include="Level 1\EmailValidator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level 1\StringReversal.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level 1\TempConversion.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Level 1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
