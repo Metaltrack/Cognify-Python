@@ -1,10 +1,6 @@
 #Basic string reversal, reversed(str) gives an object which is then joined to the empty ''
 #the reversed(str) function gives the iterator to the end of the string which is used by the join function
 #which iterates over it normally (but our iterator itself is in reverse order)
-
-from encodings.punycode import insertion_unsort
-
-
 def string_reversal_join(in_string :str):
     return ''.join(reversed(in_string))
 
