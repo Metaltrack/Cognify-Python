@@ -1,27 +1,21 @@
 import re
 
-def verify_mail(email :str):
+def check_pass(pwd :str):
     regex = r'^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w+$'
         
-    if re.match(regex, email):
-        return True
-    else:
-        return False
+    
 
 if __name__ == "__main__":
     while(True):
-        print("""Level 1 Email Validation...
-                    press [1] to check email.
+        print("""Level 2 Password Strength...
+                    press [1] to check password.
                     press [2] to exit.
         """)
         choice = int(input("Choice: "))
 
         if(choice == 1):
-            mail = str(input("Enter Email: "))
-            if(verify_mail(mail)):
-                print("Email is correct...")
-            else:
-                print("Email is incorrect...")
+            pwd = str(input("Enter Password: "))
+            
         elif(choice == 2):
             print("exiting...")
             break

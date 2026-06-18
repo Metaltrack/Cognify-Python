@@ -14,7 +14,7 @@ def check_number(number :int, guess :int):
 
 if __name__ == "__main__":
     while(True):
-        print("""Level 1 Temperature Conversion...
+        print("""Level 2 Guesser-Game-1..
                     press [1] to start.
                     press [2] to exit.
         """)
@@ -22,7 +22,6 @@ if __name__ == "__main__":
 
         if(choice == 1):
             num_to_guess = generate_number()
-            print(num_to_guess)
             print("The device has chosen!")
             while True:
                 num = int(input("Enter your guess: "))

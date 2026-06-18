@@ -8,7 +8,7 @@ def check_palindrome(word :str):
 
 if __name__ == "__main__":
     while(True):
-        print("""Level 1 Temperature Conversion...
+        print("""Level 1 Palindrome...
                     press [1] to check palindrome.
                     press [2] to exit.
         """)

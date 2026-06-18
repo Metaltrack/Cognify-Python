@@ -43,6 +43,9 @@
     <Compile Include="Level 2\GuesserGame2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Level 2\PasswordStrength.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Level 1\" />

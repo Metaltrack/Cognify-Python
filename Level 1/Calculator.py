@@ -17,7 +17,7 @@ def mod(a, b):
 
 if __name__ == "__main__":
     while(True):
-        print("""Level 1 Temperature Conversion...
+        print("""Level 1 Calculator...
                     press [1] to add.
                     press [2] to sub.
                     press [3] to mul.
