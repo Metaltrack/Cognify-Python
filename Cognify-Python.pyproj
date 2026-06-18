@@ -37,6 +37,12 @@
     <Compile Include="Level 1\TempConversion.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Level 2\Fibonacci.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level 2\FileManipulation.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Level 2\GuesserGame1.py">
       <SubType>Code</SubType>
     </Compile>
