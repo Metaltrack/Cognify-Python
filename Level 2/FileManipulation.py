@@ -32,7 +32,7 @@ if __name__ == "__main__":
         choice = int(input("Choice: "))
 
         if(choice == 1):
-            path = str(input("Enter file path (press enter to give default path): "))
+            path = str(input("Enter file path (press enter to give default path [.txt]): "))
             if path:
                 main_stuff(load_file(path))
             else:
