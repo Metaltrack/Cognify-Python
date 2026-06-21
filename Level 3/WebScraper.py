@@ -47,26 +47,36 @@ def get_custom(custom_url :str):
 
     if response.status_code == 200:
         soup = BeautifulSoup(response.text, "html.parser")
+        scraped_data = []
 
-        data = {
-            "page_title": soup.title.text if soup.title else None,
+        if soup.title:
+            scraped_data.append({
+                "Type": "Page Title",
+                "Content": soup.title.text.strip()
+            })
+        for h in soup.find_all(["h1","h2","h3","h4","h5","h6"]):
+            scraped_data.append({
+                "Type": "Heading",
+                "Content": h.text.strip()
+            })
+        for p in soup.find_all("p"):
+            scraped_data.append({
+                "Type": "Paragraph",
+                "Content": p.text.strip()
+            })
+        for a in soup.find_all("a", href=True):
+            scraped_data.append({
+                "Type": "Link",
+                "Content": a["href"]
+            })
+        for img in soup.find_all("img", src=True):
+            scraped_data.append({
+                "Type": "Image",
+                "Content": img["src"]
+            })
 
-            "headings": [h.text.strip()
-                            for h in soup.find_all(
-                                ["h1","h2","h3","h4","h5","h6"]
-                            )],
+        df = pd.DataFrame(scraped_data)
 
-            "paragraphs": [p.text.strip()
-                            for p in soup.find_all("p")],
-
-            "links": [a.get("href")
-                        for a in soup.find_all("a", href=True)],
-
-            "images": [img.get("src")
-                        for img in soup.find_all("img", src=True)] 
-            }
-
-        df = pd.DataFrame(data)
         print(df)
 
         df.to_csv("webData.csv", index=False)

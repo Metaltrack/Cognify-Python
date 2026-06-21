@@ -52,6 +52,12 @@
     <Compile Include="Level 2\PasswordStrength.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Level 3\Automation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level 3\DataPlotting.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Level 3\WebScraper.py">
       <SubType>Code</SubType>
     </Compile>
