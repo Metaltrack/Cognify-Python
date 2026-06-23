@@ -1,4 +1,10 @@
-from StringReversal import string_reversal_slice
+#this is here because I run these files directly as a command in main program
+#but then .StringReversal (which looks for local implementation) does not work
+#if I remove it and import normally then main program fails as this file is an import there
+try:
+    from .StringReversal import string_reversal_slice
+except ImportError:
+    from StringReversal import string_reversal_slice
 
 def check_palindrome(word :str):
     r_word = string_reversal_slice(word)

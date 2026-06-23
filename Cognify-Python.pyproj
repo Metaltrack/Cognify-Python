@@ -22,50 +22,59 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Cognify_Python.py" />
-    <Compile Include="Level 1\Calculator.py">
+    <Compile Include="Level_1\Calculator.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 1\EmailValidator.py">
+    <Compile Include="Level_1\EmailValidator.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 1\Palindrome.py">
+    <Compile Include="Level_1\Palindrome.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 1\StringReversal.py">
+    <Compile Include="Level_1\StringReversal.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 1\TempConversion.py">
+    <Compile Include="Level_1\TempConversion.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 2\Fibonacci.py">
+    <Compile Include="Level_1\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 2\FileManipulation.py">
+    <Compile Include="Level_2\Fibonacci.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 2\GuesserGame1.py">
+    <Compile Include="Level_2\FileManipulation.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 2\GuesserGame2.py">
+    <Compile Include="Level_2\GuesserGame1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 2\PasswordStrength.py">
+    <Compile Include="Level_2\GuesserGame2.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 3\Automation.py">
+    <Compile Include="Level_2\PasswordStrength.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 3\DataPlotting.py">
+    <Compile Include="Level_2\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Level 3\WebScraper.py">
+    <Compile Include="Level_3\Automation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level_3\DataPlotting.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level_3\WebScraper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Level_3\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Level 1\" />
-    <Folder Include="Level 2\" />
-    <Folder Include="Level 3\" />
+    <Folder Include="Level_1\" />
+    <Folder Include="Level_2\" />
+    <Folder Include="Level_3\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

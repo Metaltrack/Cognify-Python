@@ -1,9 +1,15 @@
 import pandas as pd
 import plotly.express as px
+import os
+
+default_path = os.path.dirname(os.path.realpath(__file__)) + "\Formula1_2025Season_RaceResults.csv"
 
 def plot():
-    file_path = input("Enter CSV file path: ")
-    df = pd.read_csv(file_path)
+    file_path = input("Enter CSV file path (press enter to use default data): ")
+    if file_path:
+        df = pd.read_csv(file_path)
+    else:
+        df = pd.read_csv(default_path)
 
     print("\nDataset Preview:")
     print(df.head())
